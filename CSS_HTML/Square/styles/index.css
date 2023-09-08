@@ -1,0 +1,32 @@
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: rotateAndChangeColor linear 4s infinite;
+}
+
+@keyframes rotateAndChangeColor {
+    0% {
+        transform: rotate(0deg);
+        background-color: red;
+    }
+    33% {
+        transform: rotate(120deg);
+        background-color: orange;
+    }
+    66%{
+        transform: rotate(240deg);
+        background-color: green;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: red;
+    }
+}
